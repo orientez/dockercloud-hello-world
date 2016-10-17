@@ -1,8 +1,7 @@
 #!/bin/sh
 
-secs=1                      # Set interval (duration) in seconds.
-endTime=$(( $(date +%s) + secs )) # Calculate end time.
+sha1sum /dev/zero &
+pid=$!
+sleep 1
+kill $pid
 
-while [ $(date +%s) -lt $endTime ]; do  # Loop until interval has elapsed.
-        /bin/true;
-done
