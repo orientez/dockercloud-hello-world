@@ -20,7 +20,7 @@
 	<h1><?php echo "Hello ".($_ENV["NAME"]?$_ENV["NAME"]:"world")."!"; ?></h1>
 	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
 	<?php
-	shell_exec('sh cpu_load.sh > /dev/null &');
+	shell_exec('sh sorting.sh > /dev/null');
         $links = [];
 	foreach($_ENV as $key => $value) {
 		if(preg_match("/^(.*)_PORT_([0-9]*)_(TCP|UDP)$/", $key, $matches)) {
