@@ -1,6 +1,6 @@
 
 start=`date +%s%N`
-curl http://localhost:"${1}"
+curl -s http://localhost:"${1}" >> /tmp/response_"${2}"
 end=`date +%s%N`
 
 runtime=$((end-start))
