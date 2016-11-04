@@ -12,4 +12,4 @@ for line in all_lines:
     num_list.append(val)
     rtt_sum += val
 cnt = len(all_lines)
-print "avg: " + str(rtt_sum/cnt/10e9) + " cnt: " + str(cnt) + " min: " + str(min(num_list)/10e9) + " max: " + str(max(num_list)/10e9) 
+print "avg:" + str(rtt_sum/cnt/10e9) + " cnt:" + str(cnt) + " min:" + str(min(num_list)/10e9) + " max:" + str(max(num_list)/10e9) 
