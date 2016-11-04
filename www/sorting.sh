@@ -1,1 +1,1 @@
-cat number.txt | tr "," "\n" | sort -g >> /tmp/sorted.log
+cat number.txt | tr "," "\n" | sort -g >> /dev/null
