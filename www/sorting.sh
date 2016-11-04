@@ -1,6 +1,1 @@
-
-for i in `seq 1 10000`;
-do
-echo $((1 + RANDOM % 1000000));
-
-done | sort >> /dev/null
+cat number.txt | tr "," "\n" | sort -g >> /tmp/sorted.log
